@@ -4,7 +4,8 @@ use inc::Module::Install;
 
 name     'App-Prun-Scaled';
 all_from 'lib/App/Prun/Scaled.pm';
-repository 'https://bitbucket.org/jmccarv/perl-app-prun';
+auto_set_repository;
+
 no_index directory => '.hg';
 
 requires 'File::Spec';

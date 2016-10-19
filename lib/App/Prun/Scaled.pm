@@ -1,6 +1,6 @@
 package App::Prun::Scaled;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 1;
 
@@ -14,7 +14,7 @@ App::Prun::Scaled - Provides the sprun script as a command line interface to L<P
 
 =head1 VERSION
 
-Version 1.00
+Version 1.01
 
 =head1 SYNOPSYS
 
