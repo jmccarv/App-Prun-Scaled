@@ -1,0 +1,23 @@
+#!/usr/bin/env perl
+
+use inc::Module::Install;
+
+name     'App-Prun-Scaled';
+all_from 'lib/App/Prun/Scaled.pm';
+repository 'https://bitbucket.org/jmccarv/perl-app-prun';
+no_index directory => '.hg';
+
+requires 'File::Spec';
+requires 'Getopt::Long';
+requires 'Moo';
+requires 'Parallel::ForkManager::Scaled' => '0.13';
+requires 'App::Prun';
+requires 'Storable';
+requires 'namespace::clean';
+
+test_requires 'Test::More';
+test_requires 'Test::Script';
+
+install_script glob('script/*');
+auto_install;
+WriteAll;
