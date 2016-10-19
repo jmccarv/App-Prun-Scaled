@@ -15,7 +15,7 @@ SYNOPSYS
 
 DESCRIPTION
 
-    sprun allow you to utilize multiple CPUs for some workloads from the
+    sprun allows you to utilize multiple CPUs for some workloads from the
     shell more easily.
 
     sprun takes a list of commands (stdin and/or from file(s)) and run the

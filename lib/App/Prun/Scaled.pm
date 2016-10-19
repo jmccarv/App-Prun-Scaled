@@ -21,7 +21,7 @@ Version 0.01
 
 =head1 DESCRIPTION
 
-sprun allow you to utilize multiple CPUs for some workloads from 
+sprun allows you to utilize multiple CPUs for some workloads from 
 the shell more easily.
 
 sprun takes a list of commands (stdin and/or from file(s)) and run the commands
