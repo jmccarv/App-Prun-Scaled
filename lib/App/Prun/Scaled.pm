@@ -1,6 +1,6 @@
 package App::Prun::Scaled;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 1;
 
@@ -14,7 +14,7 @@ App::Prun::Scaled - Provides the sprun script as a command line interface to L<P
 
 =head1 VERSION
 
-Version 1.01
+Version 1.02
 
 =head1 SYNOPSYS
 
@@ -75,6 +75,17 @@ Jason McCarver <slam@parasite.cc>
 =item L<Parallel::ForkManager::Scaled>
 
 =back
+
+=head1 REPOSITORY
+
+The mercurial repository for this module may be found here:
+
+  https://bitbucket.org/jmccarv/app-prun-scaled
+
+clone it:
+
+  hg clone https://bitbucket.org/jmccarv/app-prun-scaled
+
 
 =head1 COPYRIGHT AND LICENSE
 
