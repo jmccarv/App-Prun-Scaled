@@ -4,7 +4,7 @@ package App::Prun::Scaled;
 use 5.010_001;
 use parent 'App::Prun';
 
-our $VERSION = '1.03';
+our $VERSION = '1.04';
 
 1;
 
@@ -18,7 +18,7 @@ App::Prun::Scaled - Provides the sprun script as a command line interface to L<P
 
 =head1 VERSION
 
-Version 1.03
+Version 1.04
 
 =head1 SYNOPSYS
 
