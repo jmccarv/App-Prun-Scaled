@@ -2,7 +2,7 @@
 
 use warnings;
 use strict;
-use App::Prun;
+use App::Prun::Scaled;
 use Getopt::Long;
 use File::Spec;
 use Parallel::ForkManager::Scaled;
@@ -19,7 +19,7 @@ sub usage {
     );
 
     print <<EOT;
-$me v$App::Prun::VERSION - run commands in parallel
+$me v$App::Prun::Scaled::VERSION - run commands in parallel
 
 usage: $me [OPTIONS] [FILE]...
 
@@ -101,7 +101,7 @@ sub get_opts {
     ) or usage();
 
     if ($opts{version}) {
-        print "$me v$App::Prun::VERSION\n";
+        print "$me v$App::Prun::Scaled::VERSION\n";
         exit 0;
     }
 
@@ -121,7 +121,7 @@ sub main {
     my %args;
     @args{@keys} = @opts{@keys} if @keys;
 
-    my $ar = App::Prun->new(
+    my $ar = App::Prun::Scaled->new(
         pm => Parallel::ForkManager::Scaled->new(%args),
         report_failed_procs => $opts{report_failed},
         exit_on_failed_proc => $opts{exit_on_failure},

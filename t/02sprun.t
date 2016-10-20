@@ -5,7 +5,7 @@ use warnings;
 use Test::More;
 use Test::Script;
 use Storable qw( thaw );
-use App::Prun;
+use App::Prun::Scaled;
 use Parallel::ForkManager::Scaled;
 
 plan tests => 39;
