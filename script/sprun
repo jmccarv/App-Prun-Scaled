@@ -54,6 +54,7 @@ OPTIONS
   -u, --update-frequency=<sec> how frequently to make updates to the number of
                                running processed. Set to 0 to evaluate before running
                                each process. (default: $defs{update_frequency})
+  -v, --verbose                write stats to STDERR
   -V, --version                print version and exit
 
 NOTES
@@ -95,6 +96,7 @@ sub get_opts {
         'idle_threshold|idle-threshold|T=f',
         'update_frequency|update-frequency|u=i',
         'test_dump|test-dump',
+        'verbose|v',
         'version|V',
     ) or usage();
 
@@ -124,6 +126,9 @@ sub main {
         report_failed_procs => $opts{report_failed},
         exit_on_failed_proc => $opts{exit_on_failure},
     );
+
+    $ar->pm->run_on_update(\&Parallel::ForkManager::Scaled::dump_stats)
+        if $opts{verbose};
 
     $ar->_test_dump if $opts{test_dump};
 

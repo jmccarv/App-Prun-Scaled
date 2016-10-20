@@ -60,6 +60,11 @@ Ignore any failed processes, but do report to STDOUT any that fail.
 
   sprun -e -r -m 2 -M 8 -i 4 -u 3 command_file
 
+Test with the dummy_load script included in the contrib/ directory 
+of this distribution:
+
+  for F in `seq 1 100`; do echo "contrib/dummy_load"; done | sprun -v
+
 =head1 AUTHOR
 
 Jason McCarver <slam@parasite.cc>
