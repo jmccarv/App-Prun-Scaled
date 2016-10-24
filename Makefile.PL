@@ -17,7 +17,7 @@ requires 'Storable';
 requires 'namespace::clean';
 
 test_requires 'Test::More';
-test_requires 'Test::Script';
+test_requires 'Test::Script' => '1.09';
 
 install_script glob('script/*');
 auto_install;
