@@ -3,7 +3,7 @@ package App::Prun::Scaled;
 use 5.010_001;
 use parent 'App::Prun';
 
-our $VERSION = '1.05';
+our $VERSION = '1.06';
 
 1;
 
