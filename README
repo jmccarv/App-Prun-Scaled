@@ -67,13 +67,11 @@ SEE ALSO
 
 REPOSITORY
 
-    The mercurial repository for this module may be found here:
-
-      https://bitbucket.org/jmccarv/app-prun-scaled
+    The repository for this module may be found at https://github.com/jmccarv/App-Prun-Scaled
 
     clone it:
 
-      hg clone https://bitbucket.org/jmccarv/app-prun-scaled
+      git clone https://github.com/jmccarv/App-Prun-Scaled
 
 COPYRIGHT AND LICENSE
 
